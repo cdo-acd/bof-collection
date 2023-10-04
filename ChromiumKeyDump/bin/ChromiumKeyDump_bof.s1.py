@@ -7,7 +7,7 @@ from outflank_stage1.task.tasks import DownloadTask
 
 class ChromiumKeyDumpBOF(BaseBOFTask):
     def __init__(self):
-        super().__init__("ChromiumKeyDump")
+        super().__init__("chromiumkeydump", base_binary_name="ChromiumKeyDump")
 
         _browser_choices = ["chrome", "edge"]
 
